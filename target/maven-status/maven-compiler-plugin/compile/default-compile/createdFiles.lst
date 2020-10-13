@@ -5,8 +5,8 @@ model\SpecialRule.class
 model\ModelObservable.class
 model\PieceFactory.class
 model\PossibleMoveData.class
-main\Main.class
 model\ChessGame$1.class
+Main.class
 view\EditorController.class
 view\TokenController.class
 model\Upgrade.class
