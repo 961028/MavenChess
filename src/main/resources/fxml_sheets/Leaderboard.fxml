@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.MainMenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1070.0" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Schackblurr.png" />
+         </image></ImageView>
+      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" percentWidth="0.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" percentWidth="0.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="0.0" percentHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="200.0" percentHeight="0.0" prefHeight="450.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="0.0" percentHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="520.0" prefWidth="766.0" style="-fx-background-color: ffffff;" stylesheets="@ClassicBoard.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="dropshadow" />
+                  <String fx:value="grayBorder" />
+               </styleClass>
+               <children>
+                  <ScrollPane layoutX="308.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="356.0" prefWidth="766.0" />
+                    </content>
+                  </ScrollPane>
+                  <Label alignment="BOTTOM_CENTER" layoutX="306.0" layoutY="28.0" prefHeight="19.0" prefWidth="159.0" text="Leaderboard" AnchorPane.bottomAnchor="386.0">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="6.0" layoutY="76.0" prefHeight="18.0" styleClass="grayBorder" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="76.0">
+                     <children>
+                        <Label text="Name">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Win rate">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Games played">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label layoutX="237.0" layoutY="10.0" text="Best time">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label layoutX="362.0" layoutY="10.0" text="Average time">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

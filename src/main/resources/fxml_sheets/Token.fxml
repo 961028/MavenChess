@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#clicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff00;" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="enemyMove" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="#f09f02d4" radius="20.0" stroke="#ffffff00" strokeType="INSIDE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="iMove" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Circle fill="#9aff2ed4" radius="20.0" stroke="#ffffff00" strokeType="INSIDE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="canDie" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#ff2b21" layoutX="11.0" layoutY="31.0" points="6.5, -27.25, 22.75, -27.25, 17.75, -2.0, 10.5, -2.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#ff2b21" layoutX="25.0" layoutY="39.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="iAttack" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="RED" points="-45.0, -34.0, -33.75, -30.75, -35.25, -42.0, -38.0, -35.75" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Polygon fill="RED" points="-45.0, -34.0, -33.75, -30.75, -35.25, -42.0, -38.0, -35.75" rotate="180.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Polygon fill="RED" layoutX="82.0" layoutY="43.0" points="-45.0, -34.0, -33.75, -30.75, -35.25, -42.0, -38.0, -35.75" rotate="90.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Polygon fill="RED" layoutX="46.0" layoutY="43.0" points="-45.0, -34.0, -33.75, -30.75, -35.25, -42.0, -38.0, -35.75" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="canUpgrade" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#ffdd0f" layoutX="22.0" layoutY="29.0" points="-18.0, -8.75, -7.5, 0.75, -12.75, 13.0, 3.0, 7.5, 18.5, 13.0, 15.75, 0.75, 26.0, -8.75, 10.75, -11.0, 3.0, -24.0, -4.5, -11.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cantMove" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Polygon fill="#ff2121" layoutX="41.0" layoutY="39.0" points="-37.0, -2.0, -29.5, 5.0, -16.0, -6.0, -3.25, 5.0, 3.75, -2.0, -9.0, -15.0, 3.75, -25.75, -3.25, -35.0, -16.0, -23.25, -27.75, -35.0, -37.0, -28.75, -23.5, -15.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

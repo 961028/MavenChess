@@ -1,0 +1,72 @@
+
+#BoardAnchor{
+    -fx-background-color: #f0f0f0;
+}
+
+.boardImage{
+    -fx-background-image: url("/dark_gray_board.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+
+}
+
+.noImage{
+    -fx-background-image: url("/lulz.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.dropshadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+
+#menuButton {
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 0px;
+    -fx-border-color: #858585;
+}
+
+#menuButton:hover{
+    -fx-effect: dropshadow(three-pass-box, #858585, 10, 0, 0, 0);
+}
+
+#menuButton:pressed{
+    -fx-background-color: #d4d4d4;
+}
+
+.grayBorder{
+    -fx-border-color: #858585;
+    -fx-border-width: 1px;
+    -fx-background-color: #f0f0f0;
+}
+
+#pieceButton{
+    -fx-border-color: gray;
+    -fx-border-width: 3px;
+    -fx-background-color: transparent;
+    -fx-text-fill: gray;
+}
+
+#pieceButton:hover{
+    -fx-background-color: gray;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#pieceButton:pressed{
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+    -fx-font-weight: normal;
+}
+
+
+#bTimer{
+    -fx-border-color: gray;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+}
+
+.noButtonTextPadding{
+    -fx-padding: 1px;
+}
