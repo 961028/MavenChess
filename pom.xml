@@ -41,14 +41,6 @@
                     <target>11</target>
                     <release>11</release>
 
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>main.Main</mainClass>
-                        </manifest>
-                    </archive>
-
                 </configuration>
             </plugin>
 
